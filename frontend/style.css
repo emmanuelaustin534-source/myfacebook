@@ -1,0 +1,279 @@
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+}
+
+.feed {
+  padding-bottom: 40px;
+}
+
+.post {
+  transition: box-shadow 0.2s ease;
+}
+
+.post:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+.navbar {
+  background-color: #1877f2;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar #logoutBtn {
+  background: white;
+  color: #1877f2;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar #logoutBtn:hover {
+  background: #eee;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+.feed {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.create-post {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.create-post input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.create-post button {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.create-post button:hover {
+  background-color: #145dbf;
+}
+
+.post {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  object-fit: cover;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.post-content {
+  font-size: 15px;
+  line-height: 1.4;
+}
+.auth-box {
+  max-width: 400px;
+  margin: 60px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.auth-box button {
+  width: 100%;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-box button:hover {
+  background-color: #145dbf;
+}
+
+.auth-box .error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.auth-box a {
+  color: #1877f2;
+  text-decoration: none;
+}
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #65676b;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.like-btn:hover {
+  background: #f0f2f5;
+}
+
+.like-btn.liked {
+  color: #1877f2;
+}
+
+.comment-count {
+  color: #65676b;
+  font-size: 14px;
+}
+
+.comments-section {
+  margin-top: 10px;
+}
+
+.comment {
+  background: #f0f2f5;
+  padding: 8px 12px;
+  border-radius: 12px;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.comment-username {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.add-comment {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.comment-input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.comment-btn {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.comment-btn:hover {
+  background-color: #145dbf;
+}
+.post-header {
+  position: relative;
+}
+
+.owner-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #65676b;
+}
+
+.edit-btn:hover {
+  background: #e7f3ff;
+  color: #1877f2;
+  border-color: #1877f2;
+}
+
+.delete-btn:hover {
+  background: #ffebe9;
+  color: #d32f2f;
+  border-color: #d32f2f;
+}
