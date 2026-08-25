@@ -6,7 +6,7 @@ if (!token) {
   window.location.href = "login.html";
 }
 
-const API_URL = "http://localhost:3000/posts";
+const API_URL = "https://myfacebook-t7eo.onrender.com/posts";
 
 const postInput = document.querySelector(".create-post input");
 const postButton = document.querySelector(".create-post button");
